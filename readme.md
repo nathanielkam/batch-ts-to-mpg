@@ -1,16 +1,16 @@
-#Overview 
+# Overview 
  Download video clips and combine them back together
 
-#Process: 
+# Process: 
  1. Download all pieces of video from initial piece to final piece
  2. Create a combination list of all files with extension .ts 
  3. Combine all video pieces into a single video with name $output
 
-#Future Development:
+# Future Development:
  1. Parametize extension to support other types than .ts files 
  2. Piece scope analyzer so user doesn't need to set specific start and stop pieces 
 
-#Setup Instructions: 
+# Setup Instructions: 
  1. Get and install ffmpeg from https://www.ffmpeg.org/ you will need this to concatenate clips together into one piece
  2. You must be able to download pieces of the video you want for this code to work, check you can do that in browser
  3. You now need to get the first and last video fragment url
@@ -30,11 +30,11 @@
 	a. ex if you are downloading http://test.com/movie_1000.ts you might want to name your output movie
  6. You can now construct your download command 
 
-#To Download 1 video:
+# To Download 1 video:
  1. From the root directory where download.sh is located run the following command (no quotes): 
  "sh download.sh https://website.domain/video_prefix_ 1 999999999999 OUTPUT_NAME_NO_EXTENSION" 
 
-#To Download multiple videos (from same site):
+# To Download multiple videos (from same site):
  1. Edit batch.sh adding one line for each video
  2. From the root directory where download.sh is located run the following command (no quotes):
  "sh batch.sh"
