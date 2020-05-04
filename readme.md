@@ -1,5 +1,5 @@
-# Overview 
- Download video clips and combine them back together
+# Disclaimer
+Do not download any videos that you do not own the rights or have license to. 
 
 # Process: 
  1. Download all pieces of video from initial piece to final piece
