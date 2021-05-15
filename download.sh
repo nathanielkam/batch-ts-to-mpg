@@ -67,6 +67,13 @@ output=$4
 # Debug Text
 echo Output to Folder: $output
 
+if [ $# -gt 4 ]
+then
+  padding=$5
+else
+  padding=5
+fi
+
 # Make a directory for the files you are downloading, important so you only combine files for this video 
 # Location is relative to where download.sh is 
 mkdir $output
@@ -79,7 +86,7 @@ for (( i=$start; i <= $stop; i++ ))
 
     # Convert piece i to 5 digit format with leading zeroes. If you need more leading zeroes you change %05d to %06d or higher
     # if you need no leading zeroes you can just remove printf "%05d" and just use i
-    id=$(printf "%05d" $i); 
+    id=$(printf "%0"$padding"d" $i); 
 
     # Build the link of the current piece to download
     link="${url}${id}.ts" 
