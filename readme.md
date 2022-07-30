@@ -1,3 +1,5 @@
+For a complete overview of how this converted was developed check out - https://nathanielkam.com/download-ts-video-fragments-and-combine-to-mp4-with-ffmpeg/
+
 # Disclaimer
 Do not download any videos that you do not own the rights or have license to. 
 
